@@ -1,6 +1,18 @@
 .container{
-    width: 93vw;
+    width: 100vw;
     background-color: black;
-    height: 100vh;
+    padding-left: 20vh;
+    padding-top: 10vh;
+}
+h3{
+    color: White;
+    font-size: 4vh;
+    font-weight: 700;
+}
+
+.card{
+    background-color: #1A1C1E;
+    height: 30vh;
+    width: 55vh;
     border-radius: 9px;
 }
