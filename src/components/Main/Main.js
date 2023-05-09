@@ -3,9 +3,10 @@ import "./Main.css";
 import WidgetsIcon from '@mui/icons-material/Widgets';
 import { Context } from "../context";
 import Card from "../Card/Card";
+import Loading from "../Loading/Loading";
 const Main = () => {
 
-  const {Search , Title}  = useContext(Context);
+  const {Search , Title  , loading}  = useContext(Context);
 
   useEffect(()=>{
     console.log(Search);
@@ -14,7 +15,7 @@ const Main = () => {
 
   return (
     <div>
-      <div className="container h-full">
+      {(loading)?<Loading/>:(<div className="container h-full">
         <h3><WidgetsIcon sx={{fontSize:30}}/>  {Title}</h3>
         <div className="grid grid-cols-3 gap-3 mt-3 min-h-screen h-max">
         {Search?.map((item)=>{
@@ -25,7 +26,7 @@ const Main = () => {
             )
         })}
         </div>
-      </div>
+      </div>)}
     </div>
   );
 };

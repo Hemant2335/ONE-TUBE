@@ -20,6 +20,7 @@ function App() {
             <Route exact path="/" element={<Main/>} />
             <Route exact path="/searchResult/:Searchquery" element={<SearchResults/>} />
             <Route exact path="/video/:videoId" element={<VideoDetails/>} />
+            <Route exact path="/searchResult/:Searchquery/video/:videoId" element={<VideoDetails/>} />
             <Route exact path="/channel/:channelId" element={<ChannelDetails/>} />
         </Routes>
         </div>

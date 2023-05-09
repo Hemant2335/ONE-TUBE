@@ -43,13 +43,13 @@ const Sidebar = () => {
 
   return (
     <div>
-      <div className="sidebar z-20">
+      <div className="sidebar z-20 fixed">
             <a href=""><div className="drawer "><MenuIcon sx={{fontSize:30}}/></div></a>
             <div className="avtr"><a href=""><img src={avtr} alt="avtr" /></a></div>
             <div className="list">
                 <ul>
-                    <li onClick = {()=>{clickhandle("New","home"); navigate('/')}}><a href=""><HomeMaxIcon sx={{fontSize:30}}/></a></li>
-                    <li onClick = {()=>{clickhandle("Trending","Category"); navigate('/')}}><a href=""><WhatshotIcon sx={{fontSize:30}}/></a></li>
+                    <li onClick = {()=>{clickhandle('New',"home"); navigate('/')}}><a href=""><HomeMaxIcon sx={{fontSize:30}}/></a></li>
+                    <li onClick = {()=>{clickhandle('Trending',"Category"); navigate('/')}}><a href=""><WhatshotIcon sx={{fontSize:30}}/></a></li>
                     <li onClick = {()=>{clickhandle("Music","Category"); navigate('/')}}><a href=""><MusicNoteIcon sx={{fontSize:30}}/></a></li>
                     <li onClick = {()=>{clickhandle("Films","Category"); navigate('/')}}><a href=""><MovieIcon sx={{fontSize:30}}/></a></li>
                     <li onClick = {()=>{clickhandle("Live","Category"); navigate('/')}}><a href=""><LiveTvIcon sx={{fontSize:30}}/></a></li>

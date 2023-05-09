@@ -13,7 +13,7 @@ const Card = ({video}) => {
 
     const handlevideopage = (id , query)=>{
         setCategories(query);
-        navigate(`./video/${query}`)
+        navigate(`./video/${id}`)
     }
 
     const intToString = (num) => {
