@@ -18,9 +18,10 @@ module.exports = {
     spacing:{
       "5" : "40px",
       "3" : "20px",
-      "11" : "550px"
+      "11" : "550px",
+      "12" : "5.1vh"
     },
     extend: {},
   },
-  plugins: [require("@tailwindcss/line-clamp")],
+  plugins: [],
 }

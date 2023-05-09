@@ -1,0 +1,33 @@
+.card{
+    background-color: #1A1C1E;
+    height: 45vh;
+    width: 55vh;
+    border-radius: 9px;
+}
+
+.player{
+    border-radius: 9px;
+    overflow: hidden;
+}
+
+.player iframe{
+    border-radius: 9px;
+}
+.card-avtr{
+    height: 2vh;
+}
+
+h5{
+    color: white;
+    font-size: medium;
+    margin-inline: 2vh;
+    margin-top: 1vh;
+    font-weight: 500;
+}
+
+p{
+    margin-inline: 2vh;
+    color: grey;
+    font-size: 2.5vh;
+    font-weight: 500;
+}

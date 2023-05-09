@@ -1,11 +1,9 @@
 import React, { useContext, useEffect } from "react";
-import "./Main.css";
 import WidgetsIcon from '@mui/icons-material/Widgets';
-import { Context } from "../context";
-import Card from "../Card/Card";
-const Main = () => {
-
-  const {Search , Title}  = useContext(Context);
+import Card from '../../components/Card/Card';
+import { Context } from "../../components/context";
+const SearchResults = () => {
+    const {Search , Title }  = useContext(Context);
 
   useEffect(()=>{
     console.log(Search);
@@ -28,5 +26,6 @@ const Main = () => {
       </div>
     </div>
   );
-};
-export default Main;
+}
+
+export default SearchResults;

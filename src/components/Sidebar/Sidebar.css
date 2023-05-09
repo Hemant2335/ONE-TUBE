@@ -23,7 +23,7 @@
 .avtr{
     border-radius: 50%;
     background-color: black;
-    margin-top: 4vh;
+    margin-top: 5vh;
 }
 .avtr img{
     height: 6.5vh;
@@ -36,13 +36,13 @@
 
 .list ul li{
     padding-inline: 4vh;
-    padding-block: 1vh;
+    padding-block: 1.5vh;
     border-radius: 5px;
 }
 
 .list ul li:hover{
     background-color: black;    
 }
-.list :hover{
+.list ul li :hover{
     color: #D22B2B;
 }
